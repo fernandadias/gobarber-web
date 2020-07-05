@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 interface ContainerProps {
   isFocused: boolean,
+  isFilled: boolean,
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -22,6 +23,10 @@ export const Container = styled.div<ContainerProps>`
   ${props => props.isFocused && css`
     color: #FF9000;
     border-color: #FF9000;
+  `}
+
+  ${props => props.isFilled && css`
+    color: #FF9000;
   `}
 
   input{
