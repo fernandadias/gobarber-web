@@ -1,6 +1,6 @@
 import React, { useCallback, useRef } from 'react';
 import { FiArrowLeft, FiLock, FiUser, FiMail } from 'react-icons/fi';
-import { FormHandles } from '@unform/core'
+import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import getValidationError from '../../utils/getValidationErrors';
@@ -51,7 +51,6 @@ const SignUp: React.FC = () => {
           <Input icon={FiMail} name="email" placeholder="E-mail" />
           <Input icon={FiLock} name="password" type="password" placeholder="Senha" />
           <Button type="submit">Cadastrar</Button>
-
         </Form>
 
         <a href=""><FiArrowLeft />Voltar para logon</a>
